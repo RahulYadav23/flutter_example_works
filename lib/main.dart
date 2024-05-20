@@ -1,29 +1,19 @@
+import 'package:example1/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  MyAppState createState() {
-    return MyAppState();
-  }
-}
-
-class MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
-        body: Container(
-          child: Text("Hello"),
-        ),
+        body: LoginScreen(),
       ),
     );
   }
-
-
 }
